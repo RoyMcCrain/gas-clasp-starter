@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint --fix src/**/*.ts",
     "test": "jest",
-    "build": "yarn lint && yarn test && rimraf dist && webpack && cpx src/appsscript.json dist",
+    "build": "yarn lint && yarn test && rimraf dist && webpack && cpx ./appsscript.json dist",
     "deploy": "yarn build && clasp push"
   },
   "repository": {
